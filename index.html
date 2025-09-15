@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bringing Web Pages to Life</h1>
+            <p>CSS3 Animations & JavaScript Functions</p>
+        </header>
+        
+        <section class="hero">
+            <h2>Interactive Web Experience</h2>
+            <p>Here it's to demonstrates the power of combining CSS animations with JavaScript functions to create dynamic, engaging web experiences.</p>
+            <div class="animated-element"></div>
+            <button class="btn" id="hero-btn">Click for Magic!</button>
+        </section>
+        
+        <section>
+            <h2>CSS3 Transitions and Animations</h2>
+            <p>CSS allows us to create smooth transitions and engaging animations without JavaScript. Hover over the cards below to see a flip effect.</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Hover Effect</h3>
+                            <p>Hover to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>CSS Transition</h3>
+                            <p>This uses CSS transitions and 3D transforms</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Animation</h3>
+                            <p>Hover to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Keyframes</h3>
+                            <p>CSS keyframes power continuous animations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Transform</h3>
+                            <p>Hover to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>3D Effect</h3>
+                            <p>preserve-3d creates depth in the animation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>JavaScript Functions</h2>
+            <p>JavaScript functions allow us to create reusable logic with parameters and return values. The functions below demonstrate scope awareness and reusable code.</p>
+            
+            <div class="game-container">
+                <h3>Color Mixer Function</h3>
+                <p>Enter values between 0-255 for RGB components:</p>
+                
+                <div class="game-controls">
+                    <div>
+                        <label for="red-input">Red:</label>
+                        <input type="number" id="red-input" min="0" max="255" value="120">
+                    </div>
+                    <div>
+                        <label for="green-input">Green:</label>
+                        <input type="number" id="green-input" min="0" max="255" value="80">
+                    </div>
+                    <div>
+                        <label for="blue-input">Blue:</label>
+                        <input type="number" id="blue-input" min="0" max="255" value="200">
+                    </div>
+                </div>
+                
+                <button class="btn" id="mix-color-btn">Mix Color</button>
+                
+                <div class="color-box" id="color-box"></div>
+                
+                <p id="color-value">RGB(120, 80, 200)</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Combining CSS Animations with JavaScript</h2>
+            <p>JavaScript can trigger CSS animations dynamically. Click the button below to see a modal with a smooth animation.</p>
+            
+            <button class="btn" id="modal-btn">Open Animated Modal</button>
+            
+            <div class="modal" id="demo-modal">
+                <div class="modal-content">
+                    <button class="close-modal" id="close-modal">&times;</button>
+                    <h3>JavaScript-Triggered Animation</h3>
+                    <p>This modal appears with a scale animation when triggered by JavaScript.</p>
+                    <p>The animation is defined in CSS but controlled with JavaScript.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
